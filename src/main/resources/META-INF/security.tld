@@ -22,6 +22,13 @@
 		<tag-class>org.apache.shiro.web.tags.GuestTag</tag-class>
 		<body-content>JSP</body-content>
 	</tag>
+	
+	<tag>
+		<description>用戶的使用者名稱</description>
+		<name>principal</name>
+		<tag-class>org.apache.shiro.web.tags.PrincipalTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
 
 	<tag>
 		<description>判斷當前用戶是否擁有其中所有角色(逗號分隔, 表示'與'的關係)</description>
