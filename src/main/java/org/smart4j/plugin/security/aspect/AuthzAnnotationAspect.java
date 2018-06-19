@@ -37,7 +37,7 @@ public class AuthzAnnotationAspect extends AspectProxy {
 		return null;
 	}
 
-	private void handleUser() {
+	private void handleUser() throws AuthzException {
 		Subject currentUser = SecurityUtils.getSubject();
 		PrincipalCollection principals = currentUser.getPrincipals();
 		if (principals == null || principals.isEmpty()) {

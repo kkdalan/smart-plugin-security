@@ -1,8 +1,6 @@
 package org.smart4j.plugin.security.exception;
 
-import org.apache.shiro.ShiroException;
-
-public class AuthcException extends ShiroException{
+public class AuthcException extends Exception{
     /**
      * Creates a new AuthcException.
      */

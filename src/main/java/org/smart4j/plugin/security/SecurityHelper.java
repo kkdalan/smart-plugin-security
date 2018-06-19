@@ -25,7 +25,7 @@ public final class SecurityHelper {
 		}
 	}
 
-	public void logout() {
+	public static void logout() {
 		Subject currentUser = SecurityUtils.getSubject();
 		if (currentUser != null) {
 			currentUser.logout();
