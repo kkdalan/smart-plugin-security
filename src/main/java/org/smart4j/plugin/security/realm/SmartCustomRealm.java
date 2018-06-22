@@ -17,7 +17,7 @@ import org.apache.shiro.subject.SimplePrincipalCollection;
 import org.smart4j.framework.util.CollectionUtil;
 import org.smart4j.plugin.security.SecurityConstant;
 import org.smart4j.plugin.security.SmartSecurity;
-import org.smart4j.plugin.security.password.EasyCredentialsMatcher;
+import org.smart4j.plugin.security.password.Md5CredentialsMatcher;
 
 public class SmartCustomRealm extends AuthorizingRealm {
 
@@ -27,7 +27,6 @@ public class SmartCustomRealm extends AuthorizingRealm {
 		this.smartSecurity = smartSecurity;
 		super.setName(SecurityConstant.REALMS_CUSTOM);
 //		super.setCredentialsMatcher(new Md5CredentialsMatcher());
-		super.setCredentialsMatcher(new EasyCredentialsMatcher());
 	}
 
 	@Override
